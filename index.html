@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Animation</title>
+</head>
+<body 
+class="modal aos-init aos-animate" 
+data-aos-easing="ease" 
+data-aos-duration="1000" 
+data-aos-delay="100" 
+data-new-gr-c-s-check-loaded="14.1007.0" 
+data-gr-ext-installed="">
+    <div class="container">
+        <div class="home" id="home">
+            <div class="vine">
+                <img src="images/cut-vine.webp" alt="vine">
+            </div>
+            <!-- this menu is not displayed until the screen is less than 750px -->
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                        <li><a href="#home" onClick="closeMenu" class="anchor">Home</a></li>
+                        <li><a href="#featured"onClick="closeMenu" class="anchor">Featured</a></li>
+                        <li><a href="#about" onClick="closeMenu" class="anchor">About</a></li>
+                        <li><a href="#characters" onClick="closeMenu" class="anchor">Characters</a></li>
+                    </div>
+                </div>
+            </div>
+            <!-- this menu is displayed when the screen is greater than or equal to 750px -->
+            <nav>
+                <ul>
+                    <div class="home-rectangle">
+                        <li><a href="#home">Home</a></li>
+                    </div>
+                    <div class="rest">
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#characters">Characters</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <!-- this section displays the main content -->
+            <div class="home-tab">
+                <img src="images/home-news.webp" alt="">
+            </div>
+            <p class="large-screen">
+                Welcome to our animated wonderland! Step into a realm where
+                imagination knows no bounds. Dive into a world of captivating
+                characters, mesmerizing visuals, and breathtaking storytelling
+            </p>
+            <div class="stone-image">
+                <img src="images/cut-stone.webp" alt="">
+            </div>
+            <!-- this section is not displayed until the screen is less than 750px -->
+            <div class="content">
+                <div class="home-image">
+                    <img src="images/boy1-new.webp" alt="">
+                </div>
+                <div class="content-rectangle">
+                    <p class="small-screen">
+                        Welcome to our animated wonderland! Step into a realm where
+                        imagination knows no bounds. Dive into a world of captivating
+                        characters, mesmerizing visuals, and breathtaking storytelling
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal aos-init aos-animate" data-aos-duration="700" data-aos="fade-down">
+            <!-- this is the featured section -->
+            <div class="featured" id="featured">
+                <div class="featured-header">
+                    <p>Featured</p>
+                </div>
+                <div class="featured-overall">
+                    <div class="adventure">
+                        <img src="images/adventure-group.webp" alt="adventure">
+                    </div>
+                    <div class="sports">
+                        <img src="images/sports-group.webp" alt="sports">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
+            <!-- this is the about section -->
+            <div class="about" id="about">
+                <div class="about-overall">
+                    <div class="about-boy">
+                        <img src="images/boy2.webp" alt="about image">
+                    </div>
+                    <div class="about-words">
+                        <div class="about-header">
+                            <p>About</p>
+                        </div>
+                        <div class="about-paragraph">
+                            <p>
+                                At our animation website, we are passionate
+                                about the artistry and enchantment of animation.
+                                Our platform is a haven for animation lovers, creators,
+                                and enthusiasts from all walks of life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-grass">
+                    <img src="images/grass-about.webp" alt="grass image">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
+            <!-- This is the characters section -->
+            <div class="characters" id="characters">
+                <div class="characters-header">
+                    <p>Characters</p>
+                </div>
+                <div class="characters-overall">
+                    <div class="char_one">
+                        <img src="images/character1.webp" alt="character">
+                        <p>Margot</p>
+                    </div>
+                    <div class="char_two">
+                        <img src="images/character2.webp" alt="character">
+                        <p>Sheepy</p>
+                    </div>
+                    <div class="char_three">
+                        <img src="images/character3.webp" alt="character">
+                        <p>Bobo</p>
+                    </div>
+                    <div class="char_four">
+                        <img src="images/character4.webp" alt="character">
+                        <p>Crystal</p>
+                    </div>
+                    <div class="char_five">
+                        <img src="images/character5.webp" alt="character">
+                        <p>Tubby</p>
+                    </div>
+                    <div class="char_one">
+                        <img src="images/character6.webp" alt="character">
+                        <p>Mikey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- this is the footer section -->
+            <footer>
+                <div class="footer-overall">
+                    <div class="contacts">
+                        <p class="footer-header">Contacts</p>
+                        <p class="footer-regular">Admin@gmail.com</p>
+                        <p class="footer-regular">Cartoon Street 123</p>
+                        <p class="footer-regular">Huston Texas</p>
+                    </div>
+                    <div class="links">
+                        <p class="footer-header">Links</p>
+                        <p class="footer-regular">Home</p>
+                        <p class="footer-regular">Features</p>
+                        <p class="footer-regular"id="link-char">Characters</p>
+                    </div>
+                    <div class="updates">
+                        <p class="footer-header">Updates</p>
+                        <p class="footer-regular">Launches</p>
+                        <p class="footer-regular">Schedules</p>
+                        <p class="footer-regular">Announcements</p>
+                    </div>
+                </div>
+                <div class="footer-image">
+                    <img src="images/footer-grass.webp" alt="">
+                </div>
+            </footer>
+        </div>
+    </div> 
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- main script -->
+    <script src="script.js"></script> 
+</body>
+</html>

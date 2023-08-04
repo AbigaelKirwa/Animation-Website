@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+#home{
+    height: auto;
+}
+#home .vine img{
+    position: absolute;
+    width: 30%;
+    margin-left: 70%;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+.navbar{
+    display: none;
+}
+#home nav{
+    margin-left: 5%;
+    padding-top: 3%;
+    font-family: 'Berkshire Swash', cursive;
+}
+#home nav a{
+    text-decoration: none;
+}
+#home ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#home ul .rest li{
+    padding-top: 10px;
+    margin-left: 60px;
+    font-size: 30px;
+}
+#home .rest{
+    display: flex;
+    flex-direction: row;
+}
+#home .home-rectangle{
+    background-color: #055c02;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    border-radius: 27px;
+    box-shadow: 2px 4px #bab4af;
+    animation: wiggle 2s linear infinite;
+}
+#home nav .rest a{
+    color: #1F0F00;
+    font-size: 30px;
+}
+#home nav div li a{
+    color: #ffffff;
+    font-size: 20px;
+}
+.home-tab img{
+    position: absolute;
+    width: 85%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+#home p.large-screen{
+    color: #ffffff;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    font-size: 23px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+    width: 50%;
+    margin-top: 10.5%;
+    margin-left: 15%;
+    text-align: justify;
+}
+#home .stone-image img{
+    position: relative;
+    width: 25%;
+    margin-top: -250px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+#home .content{
+    display: none;
+}
+/* keyframes */
+@keyframes wiggle {
+    0%, 7%{
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-15deg);
+    }
+    20%{
+        transform: rotateZ(10deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    30%{
+        transform: rotateZ(6deg);
+    }
+    35%{
+        transform: rotateZ(-4deg);
+    }
+    40%, 100%{
+        transform: rotateZ(0);
+    }
+}
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: rotateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: rotateX(0);
+    }
+}
+/* this section makes the navigation responsive */
+@media screen and (max-width:928px) {
+    #home ul .rest li a{
+        padding-top: 10px;
+        margin-left: 5px;
+        font-size: 23px;
+    }
+    #home nav div a{
+        font-size: 17px;
+    }
+    #home .home-rectangle{
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+        border-radius: 27px;
+    }
+}
+@media screen and (max-width:895px) {
+    #home ul .rest li a{
+        padding-top: 10px;
+        margin-left: -30px;
+        font-size: 23px;
+    }
+}
+/* this section makes words responsive */
+@media screen and (max-width:1120px) {
+    #home p.large-screen{
+        margin-top: 9%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:978px) {
+    #home p.large-screen
+    {
+        margin-top: 7%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:920px) {
+    #home .vine img
+    {
+        width: 40%;
+        margin-left: 60%;
+    }
+}
+@media screen and (max-width:918px) {
+    #home p.large-screen
+    {
+        line-height: 40px;
+        margin-top: 10%;
+    }
+    #home .home-tab{
+        margin-top: 3%;
+    }
+    #home .stone-image img{
+        margin-top: -200px;
+    }
+}
+@media screen and (max-width:780px) {
+    #home p.large-screen{
+        line-height: 30px;
+        margin-top: 12%;
+    }
+    #home .stone-image img{
+        margin-top: -150px;
+    }
+}
+/* this section displays content when less than 750px */
+@media screen and (max-width:750px) {
+    #home{
+        height: auto;
+    }
+    #home .home-tab{
+        display: none;
+    }
+    #home p.large-screen{
+        display: none;
+    }
+    #home .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3%;
+    }
+    #home .content .content-rectangle{
+        width: 70%;
+        height: auto;
+        padding: 6% 4% 6% 7%;
+        background-image: linear-gradient(#A5764D, #1F0F00);
+        border-radius: 30px;
+        margin-top: -5px;
+    }
+    #home .content .content-rectangle p.small-screen{
+        color: #ffffff;
+        font-family: 'Cabin', sans-serif;
+        line-height: 50px;
+        letter-spacing: 1.5px;
+        width: 95%;
+        display: flex;
+        text-align: justify;
+    }
+    #home .home-image img{
+        margin-left: 24%;
+        width: 50%;
+    }
+    #home .stone-image img{
+        display: none;
+    }
+    #home .vine img{
+        width: 50%;
+        margin-left: 50%;
+    }
+    /* this section belongs to the responsive hamburger menu that is shown when the screen is less than 750px */
+    nav{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+        display: block;
+    }
+    .navbar .menu-items{
+        display: flex;
+        background-color: #ffffff;
+    }
+    .navbar .nav-container li{
+        list-style: none;
+    }
+    .navbar .nav-container a{
+        text-decoration: none;
+        font-family: 'Berkshire Swash',cursive;
+        color: #055c02;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .navbar .nav-container a:hover{
+        font-weight: bolder;
+    }
+    .nav-container {
+        display: block;
+        position: relative;
+        height: 60px;
+    }
+    .nav-container .checkbox{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .nav-container .hamburger-lines{
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav-container .hamburger-lines .line{
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 10px;
+        background: #055c02;
+    }
+    .nav-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .nav-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+    .nav-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        padding-top: 120px;
+        box-shadow: inset 0 0 2000px rgba(255,255,255,0.5);
+        height: 100vh;
+        width: 100%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+    .navbar .menu-items li{
+        margin-bottom: 5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .nav-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+}
+@media screen and (max-width:486px) {
+    #home .content .content-rectangle p.small-screen{
+        font-size: 15px;
+    }
+    #home .vine img{
+        width: 60%;
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width:418px) {
+    #home .content .content-rectangle p.small-screen{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:374px) {
+    #home .content .content-rectangle p.small-screen{
+        font-size: 11px;
+    }
+}
+/* styling the featured section */
+#featured{
+    margin-top: -100px;
+}
+#featured .featured-header, #about .about-header, #characters .characters-header{
+    width: 100%;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #1F0F00;
+    font-size: 60px;
+}
+#featured .featured-overall{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+#featured .featured-overall img{
+    width: 75%;
+}
+#featured .featured-overall .sports{
+    padding-top: 1%;
+}
+/* making the feautured section responsive */
+@media screen and (max-width:995px) {
+    #featured{
+        margin-top: -40px;
+    }
+    
+}
+@media screen and (max-width:750px) {
+    #featured{
+        margin-top: 70px;
+    }
+    #featured .featured-header{
+        font-size: 70px;
+    }
+    #featured .featured-overall img{
+        width: 85%;
+    }
+    #featured .featured-overall{
+        display: flex;
+        flex-direction: column;
+        padding-left: 7%;
+    }
+    #featured .featured-overall .sports, #featured .featured-overall .adventure{
+        margin-top: 7%;
+    }
+}
+@media  screen and (max-width:450px) {
+    #featured{
+        margin-top: 60px;
+    }
+    #featured .featured-header{
+        font-size: 50px;
+    }  
+}
+/* this is the styling for the about section */
+#about{
+    margin-top: 5%;
+}
+
+#about .about-overall{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#about .about-boy img{
+    width: 90%;
+    position: sticky;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+#about .about-words{
+    width: 100%;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+#about .about-words .about-paragraph{
+    text-align: justify;
+    width: 90%;
+    margin-top: 5%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+}
+#about .about-header{
+    width: 90%;
+    margin-top: 10%;
+}
+#about .about-grass img{
+    width: 100%;
+    margin-top: -180px;
+}
+/* making the about section responsive */
+@media screen and (max-width:1195px){
+    #about .about-words .about-paragraph{
+        width: 90%;
+        margin-top: 7%;
+        font-size: 19px;
+        line-height: 50px;
+        letter-spacing: 1.3px;
+    }
+}
+@media screen and (max-width:1067px){
+    #about .about-words .about-paragraph{
+        margin-top: 7%;
+        font-size: 17px;
+        line-height: 45px;
+        letter-spacing: 1.1px;
+    }
+}
+@media screen and (max-width:993px){
+    #about .about-words{
+        margin-left: -120px;
+    }
+    #about .about-words .about-paragraph{
+        width: 90%;
+        margin-top: 7%;
+        font-size: 17px;
+        line-height: 45px;
+        letter-spacing: 1.1px;
+    }
+    #about .about-boy img{
+        width: 80%;
+    }
+    #about .about-grass img{
+        margin-top: -130px;
+    }
+}
+@media screen and (max-width:866px){
+    #about .about-boy img{
+        width: 70%;
+    }
+    #about .about-words{
+        margin-left: -180px;
+    }
+    #about .about-words .about-paragraph{
+        margin-top: 7%;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+    #about .about-grass img{
+        margin-top: -90px;
+    }
+}
+@media screen and (max-width:751px){
+    #about .about-boy{
+        display: none;
+    }
+    #about .about-grass img{
+        width: 100%;
+        margin-top: 5%;
+    }
+    #about .about-words{
+        margin-left: 9%;
+    }
+    #about .about-words .about-paragraph{
+        width: 90%;
+        margin-top: 7%;
+        font-size: 23px;
+        line-height: 70px;
+        letter-spacing: 1.3px;
+    }
+}
+@media screen and (max-width:500px) {
+    #about .about-words .about-paragraph{
+        width: 90%;
+        margin-top: 7%;
+        font-size: 17px;
+        line-height: 60px;
+        letter-spacing: 1.3px;
+        padding-left: 2%;
+    }
+}
+@media screen and (max-width:415px) {
+    #about .about-words .about-paragraph{
+        width:90%;
+        font-size: 15px;
+        line-height: 50px;
+        letter-spacing: 1.3px;
+    }
+    #about .about-grass img{
+        margin-top: 3%;
+    }
+    #about .about-words{
+        margin-left: 7%;
+    }
+}
+/* styling the characters page */
+#characters{
+    width: 100%;
+}
+#characters .characters-overall{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5%;
+    row-gap: 10%;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#characters .characters-overall img{
+    width: 80%;
+}
+#characters .characters-overall img:hover{
+    width: 90%;
+}
+/* making the character section responsive */
+@media screen and (max-width:751px) {
+    #characters .characters-overall{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #characters .characters-header{
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width:625px) {
+    #characters .characters-overall{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 7%;
+        row-gap: 3%;
+        font-size: 23px;
+        font-weight: bold;
+    }
+}
+/* styling for footer section */
+footer{
+    margin-top: 15%;
+}
+footer .footer-overall{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15%;
+}
+footer .footer-header{
+    width: 100%;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #055c02;
+    font-size: 40px;
+}
+footer .footer-overall .footer-regular{
+    margin-top: 10%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 5%;
+    white-space: nowrap;
+}
+footer .footer-overall p#link-char{
+    margin-top: 25%;
+}
+footer .footer-image img{
+    width: 100%;
+    position: absolute;
+}
+/* making the footer responsive */
+@media screen and (max-width:901px){
+    footer .footer-overall .footer-header{
+        font-size: 30px;
+    }
+    footer .footer-overall .footer-regular{
+        margin-top: 15%;
+        font-size: 15px;
+        line-height: 40px;
+        margin-left: 5%;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width:751px){
+    footer{
+        margin-top: 40%;
+    }
+    footer .footer-overall{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10%;
+    }
+    footer .footer-overall .footer-regular{
+        text-align: center;
+        font-size: 20px;
+    }
+    footer .footer-overall p#link-char{
+        margin-top: 20%;
+    }
+    footer .footer-image{
+        margin-top: 40%;
+    }
+}
+@media screen and (max-width:625px){
+    footer{
+        margin-top: 85%;
+    }
+}
+@media screen and (max-width:316px){
+    footer .footer-image{
+        margin-top: 60%;
+    }
+}
