@@ -490,6 +490,7 @@ body{
     }
     #about .about-boy img{
         width: 80%;
+        margin-left: -70px;
     }
     #about .about-grass img{
         margin-top: -130px;
@@ -498,6 +499,7 @@ body{
 @media screen and (max-width:866px){
     #about .about-boy img{
         width: 70%;
+        margin-left: -40px;
     }
     #about .about-words{
         margin-left: -180px;
@@ -511,6 +513,11 @@ body{
     #about .about-grass img{
         margin-top: -90px;
     }
+}
+@media screen and (max-width:782px){
+    #about .about-words .about-paragraph{
+        margin-top: 3%;
+    }    
 }
 @media screen and (max-width:751px){
     #about .about-boy{
